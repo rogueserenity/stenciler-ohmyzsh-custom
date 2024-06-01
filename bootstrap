@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Change the theme
+sed -i 's%^ZSH_THEME=.*$%ZSH_THEME="pv"%' ~/.zshrc
+
+# Change the custom directory
+sed -i 's%# ZSH_CUSTOM=.*%ZSH_CUSTOM=~/.ohmyzsh-custom%' ~/.zshrc
+
+# Change the loaded plugins
+sed -i 's%^plugins=.*%plugins=(git poetry)%' ~/.zshrc
