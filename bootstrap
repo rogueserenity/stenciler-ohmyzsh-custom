@@ -8,3 +8,8 @@ sed -i 's%# ZSH_CUSTOM=.*%ZSH_CUSTOM=~/.ohmyzsh-custom%' ~/.zshrc
 
 # Change the loaded plugins
 sed -i 's%^plugins=.*%plugins=(git poetry)%' ~/.zshrc
+
+# check if the /workspaces/.codespaces/.persistedshare/dotfiles directory exists and then echo "foo"
+if [ -d "/workspaces/.codespaces/.persistedshare/dotfiles" ]; then
+  ln -s /workspaces/.codespaces/.persistedshare/dotfiles/.ohmyzsh-custom ~/.ohmyzsh-custom
+fi
