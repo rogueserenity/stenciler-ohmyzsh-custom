@@ -4,7 +4,7 @@ alias gol="golangci-lint run"
 alias gom="mockery --all"
 
 alias pyl="poetry run black features; poetry run pylint features"
-alias ftest="check_test_repo_token && poetry run behave"
+alias ftest="gob && check_test_repo_token && poetry run behave"
 
 check_test_repo_token() {
   if [[ -z "$TEST_REPO_TOKEN" ]]; then
@@ -12,3 +12,5 @@ check_test_repo_token() {
     export TEST_REPO_TOKEN="$token"
   fi
 }
+
+alias lint="gol && pyl"
