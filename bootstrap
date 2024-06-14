@@ -11,5 +11,5 @@ sed -i 's%^plugins=.*%plugins=(git poetry)%' ~/.zshrc
 
 # check if the /workspaces/.codespaces/.persistedshare/dotfiles directory exists and then echo "foo"
 if [ -d "/workspaces/.codespaces/.persistedshare/dotfiles" ]; then
-  ln -s /workspaces/.codespaces/.persistedshare/dotfiles/.ohmyzsh-custom ~/.ohmyzsh-custom
+  ln -s /workspaces/.codespaces/.persistedshare/dotfiles ~/.ohmyzsh-custom
 fi
