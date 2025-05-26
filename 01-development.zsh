@@ -1,5 +1,5 @@
 alias gob="go build"
-alias gou="go test -v ./..."
+alias gou="go test ./..."
 alias gol="golangci-lint run"
 alias gom="mockery --all"
 
