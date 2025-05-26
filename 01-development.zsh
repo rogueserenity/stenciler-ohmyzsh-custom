@@ -1,5 +1,5 @@
 alias gob="go build"
-alias gou="ginkgo -r --randomize-all"
+alias gou="go test -v ./..."
 alias gol="golangci-lint run"
 alias gom="mockery --all"
 
